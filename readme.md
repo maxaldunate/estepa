@@ -1,13 +1,13 @@
-#Estepa Project
-##W-ISP Invoicing Cloud System
+# Estepa Project
+## W-ISP Invoicing Cloud System
 
-###First Tasks
+### First Tasks
 * Skeleton Definition
 * Infrastructure Definition. AWS, Docker and Kubernetes
 * Tech Stack Definition. React
 * Identity Cognito
 
-###Estudiar para Remoto
+### Estudiar para Remoto
 * React/Javascript
 * Docker and Kubernetes
 
