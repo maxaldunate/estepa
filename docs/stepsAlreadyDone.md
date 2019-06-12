@@ -1,6 +1,7 @@
 # Estepa Project. Stepts already done
 
-1. Create Git Repo & Issues [link](Create Git Repo & Issues)
+1. Setup Visual Studio Code
+1. Create Git Repo [link](create-git-repo)
 1. Create a gmail & aws accounts
 1. Create and CLI IAM user in aws console
 1. Transfer "aldunate.pro" domain from esparta to estepa project. [Aws Doc](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)
@@ -10,7 +11,7 @@
 
 ### references
 
-### Create Git Repo & Issues
+### Create Git Repo
 ```bash
 cd "path to your repo"
 git init
