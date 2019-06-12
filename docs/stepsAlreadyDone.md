@@ -1,6 +1,10 @@
 # Estepa Project Tech Stack
 
 ### Stepts already done
+1. Create Git Repo & Issues
+1. Create a gmail & aws accounts
+1. Create and CLI IAM user in aws console
+
 
 * Git
 ```bash

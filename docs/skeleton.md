@@ -1,4 +1,7 @@
-# Estepa Project Tech Stack
+# Estepa Project Skeleton Definition
 
-### Skeleton Definition
+
+
+
+
 
