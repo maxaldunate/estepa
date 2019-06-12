@@ -1,12 +1,16 @@
-# Estepa Project Tech Stack
+# Estepa Project. Stepts already done
 
-### Stepts already done
-1. Create Git Repo & Issues
+1. Create Git Repo & Issues [link](Create Git Repo & Issues)
 1. Create a gmail & aws accounts
 1. Create and CLI IAM user in aws console
+1. Transfer "aldunate.pro" domain from esparta to estepa project. [Aws Doc](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)
+1.
 
 
-* Git
+
+### references
+
+### Create Git Repo & Issues
 ```bash
 cd "path to your repo"
 git init
