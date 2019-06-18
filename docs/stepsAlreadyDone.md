@@ -1,7 +1,17 @@
 # Estepa Project. Stepts already done
 
 1. Setup Visual Studio Code
-1. Create Git Repo [link](#create-git-repo)
+1. Create Git Repo
+    ```bash
+    cd "path to your repo"
+    git init
+    git add . # if you want to commit everything. Otherwise use .gitconfig files
+    git commit -m "initial commit" # If you change anything, you can add and commit again...
+
+    git remote add origin https://...
+    git remote show origin # if everything is ok, you will see your remote
+    git push -u origin master # assuming your are on the master branch.
+    ```
 1. Create a gmail & aws accounts
 1. Create and CLI IAM user in aws console
 1. Open an "AWS Support Center" ticket to transfer "aldunate.pro" domain from esparta to estepa projects aws accounts. [Aws Doc](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)
@@ -15,47 +25,29 @@ File on 'C:\Users\Admin\.aws'
 aws route53 list-resource-record-sets --hosted-zone-id hosted-zone-id > path-to-output-file
 1. Create Hosted Zone manually for each domain
 1. Create Certificates on Us East N Virginia
-  1. dzarquitectura.com,  *.dzarquitectura.com & www.dzarquitectura.com
-  1. aldunate.pro,  *.aldunate.pro, *.max.aldunate.pro, max.aldunate.pro & estepa.aldunate.pro
+    * dzarquitectura.com,  *.dzarquitectura.com & www.dzarquitectura.com
+    * aldunate.pro,  *.aldunate.pro, *.max.aldunate.pro, max.aldunate.pro & estepa.aldunate.pro
 1. Add Recordsets except for: NS & SOA, CNAMES for Certificates, ALIASES after all
 
-1. Move Aldunate Pro eMail [Git Repo](https://github.com/maxaldunate/mail-forwarder)
-  1. Verify Amazon SES Domains (Adding to hosted zones). Generating DKIM Setting on Route53
+
+1. Move **max@aldunate.pro** eMail ["Git Repo"](https://github.com/maxaldunate/mail-forwarder)
+    1. Verify Amazon SES Domains (Adding to hosted zones). Generating DKIM Setting on Route53
      For Domains and Email addresses
      [Aws Console](https://eu-west-1.console.aws.amazon.com/ses/home?region=eu-west-1#verified-senders-domain:)
-  1. Create a rule at Rule Sets and remove the rule. Remaining "default-rule-set"
-  1. terraform.tfvars
-  1. terraform init
-  1. terraform apply
-  1. mail-forwarder.bat
-  1. Update Route 53 Domain DNSs with new hosted zones
-  1. Remove old hosted zones
-  1. Ask AWS Suppor to increases 'SES Sending Limits' to 500
-  1. SES Home/SMTP Settings get Server name
-  1. Route 53. Create MX "10 inbound-smtp.eu-west-1.amazonaws.com"
-  1. Route 53. Create TXT aldunate.pro ""v=spf1 a mx -all""
-  1. Route 53. Create TXT _amazonses .aldunate.pr "BM5kuua......../.........................WYk"
-  1. Create SMTP Credentials.
-      IAM User: ses-smtp-user.20190618-182845
-      SMTP Username: AKIATYVKVZFU2JQADQ6P
-      SMTP Password: BM5kuuaAUspr49B/gY+cLGOdxKMJW8I+kKVdeBw85WYk
-1. Move Aldunate.pro Web Site
-
-
-
-
-
-### references
-
-### Create Git Repo
-```bash
-cd "path to your repo"
-git init
-git add . # if you want to commit everything. Otherwise use .gitconfig files
-git commit -m "initial commit" # If you change anything, you can add and commit again...
-
-git remote add origin https://...
-git remote show origin # if everything is ok, you will see your remote
-git push -u origin master # assuming your are on the master branch.
-
-```
+    1. Create a rule at Rule Sets and remove the rule. Remaining "default-rule-set"
+    1. terraform.tfvars
+    1. terraform init || terraform apply
+    1. mail-forwarder.bat
+    1. Update Route 53 Domain DNSs with new hosted zones
+    1. Remove old hosted zones
+    1. Ask AWS Suppor to increases 'SES Sending Limits' to 500
+    1. SES Home/SMTP Settings get Server name
+    1. Route 53. 
+        * Create MX "10 inbound-smtp.eu-west-1.amazonaws.com"
+        * Create TXT aldunate.pro ""v=spf1 a mx -all""
+        * Create TXT _amazonses .aldunate.pr "BM5kuua......../.........................WYk"
+    1. Create SMTP Credentials.
+        IAM User: ses-smtp-user.20190618-182845
+        SMTP Username: AKI..........JQADQ6P
+        SMTP Password: BM5k.........../....................eBw85WYk
+1. Move **aldunate.pro** Web Site
