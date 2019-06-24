@@ -50,4 +50,15 @@ aws route53 list-resource-record-sets --hosted-zone-id hosted-zone-id > path-to-
         IAM User: ses-smtp-user.20190618-182845
         SMTP Username: AKI..........JQADQ6P
         SMTP Password: BM5k.........../....................eBw85WYk
-1. Move **aldunate.pro** Web Site
+1. Move **aldunate.pro** Web Site. ["Git Repo"](https://github.com/maxaldunate/max-aldunate-pro)
+    1. Download github repo
+    1. npm install || npm test || npm run webpack-prod
+    1. Create manually on Aws
+        1. S3 'max.aldunate.pro' with public and static web page server
+        1. Upload files: dist/images/practices/styles/cv.pdf/favicon/index
+        1. Create CloudFront distribution pointing to S3 bucket
+        1. Create Alias Record on Route53
+1. 
+
+
+The End
