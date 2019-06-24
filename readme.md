@@ -12,4 +12,14 @@
 * [Sensible Data](/docs/sensibleData.md)
 
 
+### Folder's Structure
+* `api` 
+   RestFULL API
+* `app`
+   React/Reduc Web App SPA
+* `aws`
+   Systems Infrastructure at AWS
+* `docs`
+   Miscelaneous Documentation. Technical & Businsess
+
 The End
