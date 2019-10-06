@@ -13,13 +13,23 @@
 
 
 ### Folder's Structure
+* `docs`
+   Miscelaneous Documentation. Technical & Businsess
+
+* `aws`
+   Systems Infrastructure at AWS
+
+   Generate `terraform.tfvars` file from terraform.tfvars.model
+   `$ terraform init | apply | show | destroy`
+   
+
+
+
 * `api` 
    RestFULL API
 * `app`
    React/Reduc Web App SPA
-* `aws`
-   Systems Infrastructure at AWS
-* `docs`
-   Miscelaneous Documentation. Technical & Businsess
+
+
 
 The End
