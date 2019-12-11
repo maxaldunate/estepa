@@ -1,3 +1,11 @@
 docs/sensibleData.md
 *.tfvars
 .terraform
+obj/
+bin/
+Obj/
+Bin/
+dist/
+.cache/
+uploads/
+*.csproj.user
